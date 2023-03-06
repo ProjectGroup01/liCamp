@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+
+
+
+@media screen and (max-width:1024px) {
+    #wrap {
+        display: block;
+        width: 98%;
+    }
+    .box {
+        height: 184px;
+    }
+    #map {
+        height: 300px;
+        margin-top: 0px;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .form {
+        display: flex;
+        padding: 0px;
+        padding-bottom: 3px;
+    }
+    .result {
+        height:144px;
+        width: 100%;
+    }
+    .result h2 {
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 10px;
+        transition: all 0.3s;
+    }
+    .result p {
+        font-size: 12px;
+        color: gray;
+        text-align: center;
+        cursor: pointer;
+        padding-top: 5px;
+        transition: all 0.3s;
+    }
+    .result p:last-child {
+        padding-bottom: 15px;
+    }
+    .mapbox {
+        width:250px;
+        text-align:center;
+        padding:5px 5px;
+        border-radius: 10px;
+    }
+    .mapbox p {
+        font-size: 12px;
+        color: gray;
+    }
+    .mapbox h3 {
+        font-size: 15px;
+        font-weight: bold;
+        color: cornflowerblue;
+        padding-top: 5px;
+    }
+    .mapbox .adr {
+        padding-top: 15px;
+    }
+    .mapbox .pnum {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+}
+
+
+
+
+@media screen and (max-width:768px) {
+    #wrap {
+        display: block;
+    }
+    #map {
+        height: 300px;
+        margin-top: 10px;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .result h2 {
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 10px;
+        transition: all 0.3s;
+    }
+    .result p {
+        font-size: 12px;
+        color: gray;
+        text-align: center;
+        cursor: pointer;
+        padding-top: 5px;
+        transition: all 0.3s;
+    }
+    .result p:last-child {
+        padding-bottom: 15px;
+    }
+    .mapbox {
+        width:200px;
+        text-align:center;
+        padding:5px 5px;
+        border-radius: 10px;
+    }
+    .mapbox p {
+        font-size: 12px;
+        color: gray;
+    }
+    .mapbox h3 {
+        font-size: 15px;
+        font-weight: bold;
+        color: cornflowerblue;
+        padding-top: 5px;
+    }
+    .mapbox .adr {
+        padding-top: 15px;
+    }
+    .mapbox .pnum {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
