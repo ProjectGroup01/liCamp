@@ -9,13 +9,87 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/rwdindex.css">
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> -->
-    <script src="./js/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/rwdcommon.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=6938adc00cb38070fc3f50381896235c&libraries=services"></script>
     <script src="./js/index.js"></script>
 </head>
 <body>
      <div id="wrap">
+        <header id="header">
+            <div class="headerbox">
+              <div class="top_menu">
+                <div class="row">
+                  <!-- <a href="./index.html">HOME</a> -->
+                  <a href="./login.html">LOGIN</a>
+                  <a href="./join.html">SIGNUP</a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="logobox">
+                  <h1>
+                    <a href="#" class="logo">
+                      <img src="" alt="" />
+                      <span class="blind">로고</span>
+                    </a>
+                  </h1>
+                </div>
+              </div>
+              <nav id="nav">
+                <div class="navbox">
+                  <!-- <div class="box_bg"></div> -->
+                  <ul class="depth1">
+                    <li>
+                      <a href="../index.html">ABOUT US</a>
+                    </li>
+                    <li>
+                      <a href="../safety/index.html">SAFETY</a>
+                    </li>
+                    <li>
+                      <a href="index.html">SEARCH</a>
+                    </li>
+                    <li>
+                      <a href="../recommand/index.html">RECOMMAND</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </header>
+          <!-- header -->
+          <a href="#" class="hamburger-button">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+          <!-- hamburger -->
+          <div class="m_menu">
+            <nav class="menu">
+              <ul class="m_depth1">
+                <li>
+                  <a href="../index.html">ABOUT US</a>
+                </li>
+                <li>
+                  <a href="../safety/index.html">SAFETY</a>
+                </li>
+                <li>
+                  <a href="index.html">SEARCH</a>
+                </li>
+                <li>
+                  <a href="../recommand/index.html">RECOMMAND</a>
+                </li>
+                <li class="topMenu">
+                  <a href="#">LOGIN</a>
+                </li>
+                <li class="topMenu">
+                  <a href="#">SIGNUP</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- m_menu -->
         <div class="box">
             <div class="form">
             <select name="" id="acc_sido"></select>
@@ -24,11 +98,32 @@
         </div>
             </div>
          <div id="map"></div>
-         <script src="./kakaomap.js"></script>
+         <script src="./js/kakaomap.js"></script>
      </div>
+     <footer id="footer">
+        <div class="footer_wrap">
+          <div class="footer_logo">
+            <img src="" alt="" />
+          </div>
+          <div class="fnb">
+            <ul>
+              <li><a href="#">이용약관</a><span>|</span></li>
+              <li><a href="#">개인정보처리방침</a><span>|</span></li>
+              <li><a href="#">이메일주소 무단수집거부</a></li>
+            </ul>
+          </div>
+          <div class="footerBottom">
+            <address>서울특별시 강남구 강남구 테헤란로5길 24</address>
+            <p class="copyright">
+              Copyright ⓒ 2020 LECAMP. LTD. All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
+      <!-- footer -->
     <script type="module">
-        import sido from './sido.js'
-        
+        import sido from './js/sido.js'
+
         let sidoList = ""
         for (let i in sido) {
             sidoList += `<option>${sido[i].type}</option>`
@@ -67,13 +162,13 @@
             $( ".box" ).append( `<div class="result"> </div>` );
             console.log(msg);
             for (var i = 0; i < msg.documents.length; i++){
-            $( '.box .result' ).append( `<div class="resultContents"><h2>${msg.documents[i].place_name}</h2>
+            $( '.box .result' ).append( `<div class="resultContents"><h2 id="${msg.documents[i].address_name}">${msg.documents[i].place_name}</h2>
                 <p id="${msg.documents[i].address_name}" class="adrs" data-num="${msg.documents[i].phone}" data-url="${msg.documents[i].place_url}" data-value="${msg.documents[i].place_name}">주소 : ${msg.documents[i].address_name}</p></div>`);
             }
         });
     });
 
      </script>
-
+    <script src="../js/common.js"></script>
 </body>
 </html>
