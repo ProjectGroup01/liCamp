@@ -1,4 +1,25 @@
 @charset "utf-8";
+
+
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
 .result::-webkit-scrollbar {
     width: 15px;
 }
@@ -13,10 +34,10 @@
     background: rgba(33, 122, 244, .1);
 }
 #wrap {
-    background:url(../img/background3.jpg);
+    /* background:url(../img/background3.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     width: 100%;
 }
 #section {
@@ -24,14 +45,16 @@
     height: 100vh;
     justify-content: center;
     align-items: center;
-    width: 94%;
-    margin: 0 auto;
+    width: 100%;
 }
 .box {
     opacity: 0.85;
     transition: all 0.4s;
     height: 75vh;
     flex: 1;
+    margin-left: 3%;
+    margin-right: 3%;
+    z-index: 999;
 }
 .box:hover {
     opacity: 1;
@@ -40,6 +63,7 @@
     flex: 1;
     height: 75vh;
     border-radius: 5px;
+    margin-right: 3%;
     opacity: 0.85;
     transition: all 0.4s;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -62,7 +86,6 @@ select:hover {
 }
 .form {
     display: flex;
-    padding: 0 50px;
     padding-bottom: 30px;
 }
 .form #searchBtn {
@@ -77,8 +100,6 @@ select:hover {
     opacity: 1;
 }
 .result {
-    width: 90%;
-    margin: 0 auto;
     background: rgba(255, 255, 255, 1);
     padding: 20px 0px;
     border-radius: 10px;
