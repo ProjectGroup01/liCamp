@@ -7,21 +7,32 @@
     #section {
         display: block;
         width: 98%;
+        margin: 0 auto;
     }
     .box {
         padding-top: 70px;
         height: 184px;
+        margin-right: 0;
+        margin-left: 0;
     }
     #map {
         height: 300px;
         margin: 0 auto;
         margin-top: 70px;
         width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    select {
+        margin-right: 2px;
     }
     .form {
         display: flex;
         padding: 0px;
         padding-bottom: 3px;
+    }
+    .form #searchBtn {
+        width: 100px;
     }
     .result {
         height:144px;
