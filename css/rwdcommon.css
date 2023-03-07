@@ -30,7 +30,6 @@
     position: relative;
     margin: 45px 0;
     transition: all 0.3s;
-    display: none;
   }
 
   .hamburger-button {
