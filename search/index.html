@@ -90,16 +90,17 @@
             </nav>
           </div>
           <!-- m_menu -->
+          <section id="section">
         <div class="box">
             <div class="form">
-            <select name="" id="acc_sido"></select>
-            <select name="" id="acc_gugun"></select>
+            <select name="" id="acc_sido" class="select"></select>
+            <select name="" id="acc_gugun" class="select"></select>
             <button id="searchBtn">검색</button>
         </div>
             </div>
          <div id="map"></div>
          <script src="./js/kakaomap.js"></script>
-     </div>
+        </section>
      <footer id="footer">
         <div class="footer_wrap">
           <div class="footer_logo">
@@ -121,21 +122,19 @@
         </div>
       </footer>
       <!-- footer -->
+    </div><!-- wrap -->
     <script type="module">
         import sido from './js/sido.js'
-
         let sidoList = ""
         for (let i in sido) {
             sidoList += `<option>${sido[i].type}</option>`
         }
         $('#acc_sido').append(sidoList)
-
         gugun('서울특별시')
         $('#acc_sido').on('change', function(){
             let tsido = $('#acc_sido option:selected').text()
             gugun(tsido)
         })
-
         function gugun(tsido){
             let newsido = sido.filter(function(value){
                 return value.type===tsido
@@ -147,27 +146,6 @@
             })
             $('#acc_gugun').html(gugunList)
         }
-        $("#searchBtn").click(function() {
-        $.ajax({
-            method: "GET",
-            url: "https://dapi.kakao.com/v2/local/search/keyword.json?",
-            headers: { Authorization: "KakaoAK 4e0307ee5904685328189e9fb9d630e4" },
-            data: {
-                query: $("#acc_gugun option:selected").val(),
-                size:15,
-        }
-        })
-        .done(function (msg) { 
-            $('.box .result').remove()
-            $( ".box" ).append( `<div class="result"> </div>` );
-            console.log(msg);
-            for (var i = 0; i < msg.documents.length; i++){
-            $( '.box .result' ).append( `<div class="resultContents"><h2 id="${msg.documents[i].address_name}">${msg.documents[i].place_name}</h2>
-                <p id="${msg.documents[i].address_name}" class="adrs" data-num="${msg.documents[i].phone}" data-url="${msg.documents[i].place_url}" data-value="${msg.documents[i].place_name}">주소 : ${msg.documents[i].address_name}</p></div>`);
-            }
-        });
-    });
-
      </script>
     <script src="../js/common.js"></script>
 </body>
