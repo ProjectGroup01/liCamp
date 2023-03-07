@@ -23,10 +23,16 @@
 #header:hover {
   background: rgba(255, 255, 255, 1);
 }
+#header:hover + .hamburger-button span {
+  background: #3d4146;
+}
 
 #header.on {
   background: rgba(255, 255, 255, 1);
   box-shadow: 0px 8px 10px 2px rgb(0 0 0 / 10%);
+}
+#header.on + .hamburger-button span {
+  background: #3d4146;
 }
 
 /* 헤더 로고 */
@@ -156,7 +162,7 @@
   right: 20px;
   transform: translateY(-50%); */
   top: 30px;
-  right: 20px;
+  right: 3%;
   z-index: 999999;
 }
 
@@ -165,12 +171,14 @@
   height: 8px;
   border-radius: 4px;
   width: 100%;
-  background: #3d4146;
+  background: #fff;
   top: 0;
   transition: 0.2s;
   z-index: 999999;
 }
-
+.hamburger-button:hover span {
+  background: #3d4146;
+}
 .hamburger-button span:nth-child(1) {
   top: 0;
 }
@@ -190,6 +198,9 @@
 
 .hamburger-button.active span {
   background-color: #fff;
+}
+.hamburger-button.active:hover span {
+  background-color: #3d4146;;
 }
 
 .hamburger-button.active span:nth-child(1),
@@ -307,18 +318,11 @@
   position: relative;
 }
 
-#footer .footer_logo img {
-  width: 148px;
-  height: 85px;
-  position: absolute;
-  left: -60px;
-}
-
 #footer .fnb {
-  width: 80%;
-  /* padding: 15px 0 0 0; */
+  width: 100%;
+  padding: 15px 0 0 0;
   overflow: hidden;
-  margin-left: 160px;
+  margin-left: 120px;
   position: absolute;
   /* top: -15px; */
   left: 0px;
@@ -348,7 +352,7 @@
   position: relative;
   padding: 42px 0 0;
   margin-top: 30px;
-  margin-left: 178px;
+  margin-left: 136px;
   color: #ddd;
 }
 

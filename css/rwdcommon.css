@@ -1,6 +1,9 @@
 @charset "utf-8";
 
 @media screen and (max-width: 1024px) {
+  #header {
+    height: 60px;
+  }
   #header .top_menu {
     text-align: right;
     color: #999;
@@ -27,10 +30,29 @@
     position: relative;
     margin: 45px 0;
     transition: all 0.3s;
+    display: none;
   }
 
   .hamburger-button {
-    right: 26px;
+    right: 10px;
+    width: 25px;
+    height: 20px;
+    top: 16px;
+  }
+  .hamburger-button span {
+    height: 6px;
+  }
+  .hamburger-button span:nth-child(1) {
+    top: 0;
+  }
+  
+  .hamburger-button span:nth-child(2),
+  .hamburger-button span:nth-child(3) {
+    top: 10px;
+  }
+  
+  .hamburger-button span:nth-child(4) {
+    top: 20px;
   }
   .m_menu nav ul li {
     padding: 10px 0;
@@ -45,7 +67,7 @@
     transform: translateY(-50%);
     width: 550px;
     transition: all 0.8s;
-    display: flex;
+    display: none;
   }
 
   #header #nav .depth1 > li {
