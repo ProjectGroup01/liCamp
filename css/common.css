@@ -40,12 +40,14 @@
 }
 
 #header .logobox .logo {
-  background: url();
+  background: url(../img/LECAMP_logo1.png);
   display: block;
-  width: 180px;
-  height: 43px;
+  width: 110px;
+  height: 35px;
   background-repeat: no-repeat;
   background-size: contain;
+  margin-left: 30px;
+  margin-top: 10px;
 }
 
 #header .logobox img {
@@ -53,11 +55,15 @@
 }
 
 #header:hover .logobox .logo {
-  background: url();
+  background: url(../img/LECAMP_logo2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 #header.on .logobox .logo {
-  background: url();
+  background: url(../img/LECAMP_logo2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 /* 헤더 탑메뉴 */
@@ -301,11 +307,18 @@
   position: relative;
 }
 
+#footer .footer_logo img {
+  width: 148px;
+  height: 85px;
+  position: absolute;
+  left: -60px;
+}
+
 #footer .fnb {
-  width: 100%;
-  padding: 15px 0 0 0;
+  width: 80%;
+  /* padding: 15px 0 0 0; */
   overflow: hidden;
-  margin-left: 120px;
+  margin-left: 160px;
   position: absolute;
   /* top: -15px; */
   left: 0px;
@@ -335,7 +348,7 @@
   position: relative;
   padding: 42px 0 0;
   margin-top: 30px;
-  margin-left: 136px;
+  margin-left: 178px;
   color: #ddd;
 }
 
