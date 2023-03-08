@@ -196,7 +196,7 @@
     font-weight: bold;
   }
 }
-#article3 .list:hover {
+#article3 .list li:hover {
   animation: none;
 }
 #article3 .intro {
@@ -211,15 +211,6 @@
   padding: 50px;
   display: flex;
   list-style: none;
-  animation: vibration 0.2s infinite;
-}
-@keyframes vibration {
-  from {
-    transform: rotate(1deg);
-  }
-  to {
-    transform: rotate(-1deg);
-  }
 }
 @media screen and (max-width:1024px) {
   #article3 .list {
@@ -231,11 +222,21 @@
 #article3 .list li {
   flex: 1 1 25%;
   margin: 0 20px;
+  animation: vibration 0.3s infinite;
+}
+@keyframes vibration {
+  from {
+    transform: rotate(3deg);
+  }
+  to {
+    transform: rotate(-3deg);
+  }
 }
 @media screen and (max-width:1024px) {
   #article3 .list li {
     flex: 1 1 40%;
     margin: 5px 5px;
+    animation: none;
   }
 }
 #article3 .list li .box {
@@ -343,4 +344,4 @@
   #article4 .img p {
     padding: 10px 0;
   }
-}/*# sourceMappingURL=safety.css.map */
+}/*# sourceMappingURL=index.css.map */

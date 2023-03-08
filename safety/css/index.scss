@@ -97,7 +97,7 @@ $phone: "screen and (max-width:1024px)";
      strong{ line-height: 3; font-size: 20px;
         @media #{$phone}{ font-size: 18px; font-weight: bold;}}
 
-    .list:hover{
+    .list li:hover{
         animation: none;
     }    
     .intro { line-height: 2;
@@ -106,21 +106,22 @@ $phone: "screen and (max-width:1024px)";
     .list{ 
         padding: 50px; display: flex; list-style: none;  
         // animation: pulse 1.5s alternate infinite; 
-        animation: vibration .2s infinite;
-
-        @keyframes vibration {
-            from {
-              transform: rotate(1deg);
-            }
-            to {
-              transform: rotate(-1deg);
-            }
-          }
-
         
         @media #{$phone}{ animation: none; padding: 10px; flex-wrap: wrap;}
         li{ flex:1 1 25%; margin: 0 20px;
-            @media #{$phone}{ flex:1 1 40%; margin: 5px 5px;}
+
+            animation: vibration .3s infinite;
+        
+            @keyframes vibration {
+                from {
+                  transform: rotate(3deg);
+                }
+                to {
+                  transform: rotate(-3deg);
+                }
+              }
+
+            @media #{$phone}{ flex:1 1 40%; margin: 5px 5px; animation: none;}
             
             .box{
                 border: 6px solid #d81b60; height: 330px;
