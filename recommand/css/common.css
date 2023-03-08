@@ -1,14 +1,6 @@
-@charset "utf-8";
 
-body { background: #000; }
-.row {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 10px;
-  }
-  
-  /* 헤더 */
-  #header {
+/* 헤더 */
+#header {
     width: 100%;
     background: rgba(255, 255, 255, 0);
     display: block;
@@ -216,32 +208,78 @@ body { background: #000; }
   .hamburger-button.active span:nth-child(3) {
     transform: rotate(-45deg);
   }
-  
 
-.article1 h2 { font-size: 30px; font-weight: 500; color: #fff; padding: 20px 0 24px; text-align: center; }
-/* ul { overflow: hidden; } */
-.article1 ul li { float: left; width: 32%; margin-bottom: 5%;
-    text-align: center;
+
+  /* 푸터 */
+#footer {
+  width: 100%;
+  position: relative;
+  /* position: fixed;
+  left: 0;
+  bottom: 0; */
+  background: #111;
+  padding: 20px 0 50px 0;
+  color: #ddd;
 }
 
-.article1 ul li:nth-child(3n) { margin-right: 0%; }
-.article1 li > div { position: relative; overflow: hidden; }
-.article1 li > div::before {
-    content:''; position:absolute; top:0; left:0; right:0;
-    bottom:0;  background:rgba(0,0,0,0);
-    transition:all 0.4s;
+#footer .footer_wrap {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
 }
-.article1 li:hover > div::before {
-    background: rgba(0,0,0,0.5);
+
+#footer .footer_logo img {
+  width: 148px;
+  height: 85px;
+  position: absolute;
+  left: -60px;
 }
-.article1 li > div img { transition: all 0.4s; }
-/* li:hover > div img { transform: scale(1.2); } */
-.article1 li .zoom { position: absolute;
-    top: 50%; transform: translateY(-50%);
-    left: 0; right: 0;
-    color: #fff; opacity: 0;
-    transition: all 0.4s; z-index: 10;
+
+#footer .fnb {
+  width: 80%;
+  /* padding: 15px 0 0 0; */
+  overflow: hidden;
+  margin-left: 160px;
+  position: absolute;
+  /* top: -15px; */
+  left: 0px;
 }
-.article1 li:hover .zoom { opacity: 1; }
-.article1 li h4 { font-size: 35px; margin: 12px; }
-.article1 li p { font-size: 20px; margin: 12px; }
+
+#footer .fnb li {
+  display: inline-block;
+  color: #ddd;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#footer .fnb li:hover a {
+  color: #fff;
+}
+
+#footer .fnb li a {
+  padding: 0 20px;
+}
+
+#footer .fnb span {
+  padding-left: 5px;
+  color: #777;
+  font-size: 14px;
+}
+
+.footerBottom {
+  position: relative;
+  padding: 42px 0 0;
+  margin-top: 30px;
+  margin-left: 178px;
+  color: #ddd;
+}
+.footerBottom address {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.footerBottom .copyright {
+  margin: 10px 0 0;
+  font-size: 15px;
+  font-weight: 300;
+}
