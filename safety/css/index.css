@@ -2,6 +2,10 @@
   margin: 0 auto;
 }
 
+#wrap {
+  background: #000;
+}
+
 #article1 {
   max-width: 1500px;
   display: flex;
@@ -25,7 +29,7 @@
   text-align: center;
   overflow: hidden;
   margin: 0 50px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgba(255, 255, 255, 0.9) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   animation: flipInY 2s alternate;
 }
 @media screen and (max-width:1024px) {
@@ -176,6 +180,7 @@
 }
 #article3 h1 {
   font-size: 35px;
+  color: #fff;
 }
 @media screen and (max-width:1024px) {
   #article3 h1 {
@@ -189,6 +194,7 @@
 #article3 strong {
   line-height: 3;
   font-size: 20px;
+  color: #fff;
 }
 @media screen and (max-width:1024px) {
   #article3 strong {
@@ -201,6 +207,7 @@
 }
 #article3 .intro {
   line-height: 2;
+  color: #fff;
 }
 @media screen and (max-width:1024px) {
   #article3 .intro {
@@ -240,10 +247,10 @@
   }
 }
 #article3 .list li .box {
-  border: 6px solid #d81b60;
   height: 330px;
+  background: rgb(202, 200, 200);
   border-radius: 50px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgba(255, 255, 255, 0.5) 0px 15px 30px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 @media screen and (max-width:1024px) {
   #article3 .list li .box {
@@ -293,10 +300,19 @@
   background-color: #000;
   color: #fff;
   text-align: center;
+  width: 90%;
+  margin: 50px auto;
+  border: 6px solid #fff;
+  border-radius: 30px;
+  animation: pulse 2s alternate infinite;
+}
+#article4:hover {
+  animation: none;
 }
 @media screen and (max-width:1024px) {
   #article4 {
     padding: 10px;
+    animation: none;
   }
 }
 #article4 .movie {

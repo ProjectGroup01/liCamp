@@ -2,6 +2,9 @@ $phone: "screen and (max-width:1024px)";
 // @media #{$phone}{ }
 
 *{ margin: 0 auto; }
+#wrap{
+    background: #000;
+}
 #article1{
     max-width: 1500px;
     display: flex; text-align:center;
@@ -15,7 +18,7 @@ $phone: "screen and (max-width:1024px)";
         color: #fff; text-decoration: none;  
         text-align: center; 
         overflow: hidden; margin: 0 50px;
-        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        box-shadow: rgba(255, 255, 255, 90%) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
         animation: flipInY 2s alternate;
 
         @media #{$phone}{ width: 80%; margin: 30px auto;}
@@ -87,20 +90,20 @@ $phone: "screen and (max-width:1024px)";
     padding: 50px 0;
     margin: 50px auto;
     text-align: center;
-    h1{ font-size: 35px;
+    h1{ font-size: 35px; color: #fff;
         @media #{$phone}{ font-size: 30px; margin: 0;} 
     }
 
     .content1 {
         margin: 0 30px;
     }
-     strong{ line-height: 3; font-size: 20px;
+     strong{ line-height: 3; font-size: 20px; color: #fff;
         @media #{$phone}{ font-size: 18px; font-weight: bold;}}
 
     .list li:hover{
         animation: none;
     }    
-    .intro { line-height: 2;
+    .intro { line-height: 2; color: #fff;
         @media #{$phone}{ display: none; }}
     
     .list{ 
@@ -124,16 +127,18 @@ $phone: "screen and (max-width:1024px)";
             @media #{$phone}{ flex:1 1 40%; margin: 5px 5px; animation: none;}
             
             .box{
-                border: 6px solid #d81b60; height: 330px;
-                border-radius: 50px; box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+                 height: 330px; background: rgb(202, 200, 200);
+                border-radius: 50px; box-shadow: rgba(255, 255, 255, 50%) 0px 15px 30px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
                 @media #{$phone}{ height: 230px;  border-radius: 20px; }
                 img{border-radius: 50%; padding: 20px 0; text-align: center; 
                     @media #{$phone}{ width: 100%; padding: 10px 0; }
                 }
-                h3{line-height: 2; font-size: 25px;
+                h3{line-height: 2; font-size: 25px; 
+                    // color: #fff;
                     @media #{$phone}{ font-size: 15px; }
                 }
                 p{ line-height: 1.5; font-weight: 600; padding: 10px 0; font-size: 15px;
+                    // color: #fff; 
                     @media #{$phone}{ font-size: 12px; padding: 0 5px;}
                 }
                 img{width: 50%;
@@ -148,7 +153,15 @@ $phone: "screen and (max-width:1024px)";
     background-color: #000;
     color: #fff;
     text-align: center;
-    @media #{$phone}{ padding: 10px;}
+    width: 90%;
+    margin: 50px auto;
+    border: 6px solid #fff;
+    border-radius: 30px;
+    animation: pulse 2s alternate infinite; 
+&:hover{
+    animation: none;
+}    
+    @media #{$phone}{ padding: 10px; animation: none;}
     .movie{ margin: 0 auto; }
     h1{ padding: 10px 0; font-size: 30px;
         @media #{$phone}{ font-size: 20px;}}
