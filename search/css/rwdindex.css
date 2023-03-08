@@ -29,7 +29,6 @@
     .form {
         display: flex;
         padding: 0px;
-        padding-bottom: 3px;
     }
     .form #searchBtn {
         width: 100px;
