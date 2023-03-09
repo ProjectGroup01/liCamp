@@ -41,8 +41,31 @@ $('.article4 .movie .img img').on('click', function(){
         top:'50%',
         left:'50%',
         transform:'translate(-50%, -60%)'
-         
      })
+
+     if (window.innerWidth < 1024){
+        $('.modal .imgbox').css({
+            position:'absolute',
+            width:'90%',
+            height:'30%',
+            top:'50%',
+            left:'50%',
+            transform:'translate(-50%, -60%)'
+         })
+     } 
+    //else if( window.innerWidth < 768){
+    //     $('.modal .imgbox').css({
+    //         position:'absolute',
+    //         width:'300px',
+    //         height:'200px',
+    //         top:'50%',
+    //         left:'50%',
+    //         transform:'translate(-50%, -60%)'
+    //      })
+    //  }
+
+
+
     
     $('.imgbox button').css({
         position:'absolute',
