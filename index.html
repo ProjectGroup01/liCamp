@@ -1,110 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/rwdindex.css">
-    <link rel="stylesheet" href="../css/common.css" />
-    <link rel="stylesheet" href="../css/rwdcommon.css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=6938adc00cb38070fc3f50381896235c&libraries=services"></script>
-    <script src="./js/index.js"></script>
-</head>
-<body>
-     <div id="wrap">
-        <header id="header">
-            <div class="headerbox">
-              <div class="top_menu">
-                <div class="row">
-                  <!-- <a href="./index.html">HOME</a> -->
-                  <a href="./login.html">LOGIN</a>
-                  <a href="./join.html">SIGNUP</a>
-                </div>
-              </div>
-              <div class="row">
-                <div class="logobox">
-                  <h1>
-                    <a href="../index.html" class="logo">
-                      <img src="" alt="" />
-                      <span class="blind">로고</span>
-                    </a>
-                  </h1>
-                </div>
-              </div>
-              <nav id="nav">
-                <div class="navbox">
-                  <!-- <div class="box_bg"></div> -->
-                  <ul class="depth1">
-                    <li>
-                      <a href="../aboutus/index.html">ABOUT US</a>
-                    </li>
-                    <li>
-                      <a href="../safety/index.html">SAFETY</a>
-                    </li>
-                    <li>
-                      <a href="index.html">SEARCH</a>
-                    </li>
-                    <li>
-                      <a href="../recommand/index.html">RECOMMAND</a>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/rwdcommon.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/rwdindex.css" />
+    <script src="./js/prefixfree.min.js"></script>
+    <title>LECAMP</title>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+  </head>
+  <body>
+    <div id="wrap">
+      <header id="header">
+        <div class="headerbox">
+          <div class="top_menu">
+            <div class="row">
+              <a href="./login.html">LOGIN</a>
+              <a href="./join.html">SIGNUP</a>
             </div>
-          </header>
-          <!-- header -->
-          <a href="#" class="hamburger-button">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </a>
-          <!-- hamburger -->
-          <div class="m_menu">
-            <nav class="menu">
-              <ul class="m_depth1">
+          </div>
+          <div class="row">
+            <div class="logobox">
+              <h1>
+                <a href="./index.html" class="logo">
+                  <span class="blind">로고</span>
+                </a>
+              </h1>
+            </div>
+          </div>
+          <nav id="nav">
+            <div class="navbox">
+              <!-- <div class="box_bg"></div> -->
+              <ul class="depth1">
                 <li>
-                  <a href="../aboutus/index.html">ABOUT US</a>
-                </li>
-                <li>
-                  <a href="../safety/index.html">SAFETY</a>
-                </li>
-                <li>
-                  <a href="index.html">SEARCH</a>
+                  <a href="aboutus/index.html">ABOUT US</a>
                 </li>
                 <li>
-                  <a href="../recommand/index.html">RECOMMAND</a>
+                  <a href="safety/index.html">SAFETY</a>
                 </li>
-                <li class="topMenu">
-                  <a href="#">LOGIN</a>
+                <li>
+                  <a href="search/index.html">SEARCH</a>
                 </li>
-                <li class="topMenu">
-                  <a href="#">SIGNUP</a>
+                <li>
+                  <a href="recommand/index.html">RECOMMAND</a>
                 </li>
               </ul>
-            </nav>
-          </div>
-          <!-- m_menu -->
-          <section id="section">
-        <div class="box">
-            <div class="form">
-            <select name="" id="acc_sido" class="select"></select>
-            <select name="" id="acc_gugun" class="select"></select>
-            <button id="searchBtn" data-text="검색">검색</button>
-        </div>
             </div>
-         <div id="map"></div>
-         <script src="./js/kakaomap.js"></script>
-        </section>
-     <footer id="footer">
+          </nav>
+        </div>
+      </header>
+      <!-- header -->
+      <a href="#" class="hamburger-button">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+      <!-- hamburger -->
+      <div class="m_menu">
+        <nav class="menu">
+          <ul class="m_depth1">
+            <li>
+              <a href="aboutus/index.html">ABOUT US</a>
+            </li>
+            <li>
+              <a href="safety/index.html">SAFETY</a>
+            </li>
+            <li>
+              <a href="search/index.html">SEARCH</a>
+            </li>
+            <li>
+              <a href="recommand/index.html">RECOMMAND</a>
+            </li>
+            <li class="topMenu">
+              <a href="#">LOGIN</a>
+            </li>
+            <li class="topMenu">
+              <a href="#">SIGNUP</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- m_menu -->
+      <section id="section">
+        <article class="cont1">
+          <div class="visual">
+            <div class="video">
+              <video id="vid" muted autoplay loop>
+                <!-- <source src="./img/cont1_video.mp4" type="video/mp4" /> -->
+                <source src="./img/content1Video.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </article>
+        <article class="cont2">
+          <div class="container">
+            <div class="section-title">
+              <div class="intro-wrapper">
+                <span>A&nbsp;</span>
+                <div class="intro-image-wrapper">
+                  <img src="./img/cont2_1.jpeg" alt="" />
+                </div>
+                <span>tiny&nbsp;</span>
+                <span>mountain&nbsp;</span>
+                <span>village&nbsp;</span>
+                <div class="intro-image-wrapper">
+                  <img src="./img/cont2_2.jpeg" alt="" class="img2" />
+                </div>
+                <span>where&nbsp;</span>
+                <span>it&nbsp;</span>
+                <span>all&nbsp;</span>
+                <span>began</span>
+                <div class="intro-image-wrapper">
+                  <img src="./img/cont2_3.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="cont3">
+          <div class="container">
+            <div class="clip clip1"></div>
+            <div class="clip clip2"></div>
+            <div class="clip clip3"></div>
+          </div>
+        </article>
+      </section>
+      <!-- section -->
+      <footer id="footer">
         <div class="footer_wrap">
           <div class="footer_logo">
-            <img src="../img/LECAMP_flogo.png" alt="#" />
+            <img src="./img/LECAMP_flogo.png" alt="" />
           </div>
           <div class="fnb">
             <ul>
@@ -122,31 +159,7 @@
         </div>
       </footer>
       <!-- footer -->
-    </div><!-- wrap -->
-    <script type="module">
-        import sido from './js/sido.js'
-        let sidoList = ""
-        for (let i in sido) {
-            sidoList += `<option>${sido[i].type}</option>`
-        }
-        $('#acc_sido').append(sidoList)
-        gugun('서울특별시')
-        $('#acc_sido').on('change', function(){
-            let tsido = $('#acc_sido option:selected').text()
-            gugun(tsido)
-        })
-        function gugun(tsido){
-            let newsido = sido.filter(function(value){
-                return value.type===tsido
-            })
-            let newgugun = newsido[0].gugun
-            let gugunList = ""
-            newgugun.map(function(value){
-                gugunList += `<option value="${value.code}">${value.name}</option>`
-            })
-            $('#acc_gugun').html(gugunList)
-        }
-     </script>
-    <script src="../js/common.js"></script>
-</body>
+      <script src="./js/common.js"></script>
+    </div>
+  </body>
 </html>
