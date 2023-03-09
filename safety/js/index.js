@@ -58,6 +58,7 @@ $('.article4 .movie .img img').on('click', function(){
 
 })
 
+
 // 모달창의 닫기 버튼 클릭하면 모달창 닫게 하기
 $('body').on('click', '.modal button, .modal', function(){
     $('.modal').remove()

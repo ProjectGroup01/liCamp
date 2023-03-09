@@ -61,6 +61,8 @@
   transform: translateY(30px);
   transition: all 0.4s;
   letter-spacing: 3px;
+  color: #e91e63;
+  font-weight: bold;
 }
 @media screen and (max-width:1024px) {
   #article1 .rule .safe h1 {
@@ -194,7 +196,7 @@
 #article3 strong {
   line-height: 3;
   font-size: 20px;
-  color: #fff;
+  color: #e91e63;
 }
 @media screen and (max-width:1024px) {
   #article3 strong {
@@ -215,7 +217,7 @@
   }
 }
 #article3 .list {
-  padding: 50px;
+  padding: 70px;
   display: flex;
   list-style: none;
 }
@@ -229,14 +231,13 @@
 #article3 .list li {
   flex: 1 1 25%;
   margin: 0 20px;
-  animation: vibration 0.3s infinite;
 }
-@keyframes vibration {
-  from {
-    transform: rotate(3deg);
-  }
-  to {
-    transform: rotate(-3deg);
+#article3 .list li:hover {
+  animation: slide 0.5s normal both;
+}
+@media screen and (max-width:1024px) {
+  #article3 .list li:hover {
+    animation: none;
   }
 }
 @media screen and (max-width:1024px) {
@@ -248,7 +249,7 @@
 }
 #article3 .list li .box {
   height: 330px;
-  background: rgb(202, 200, 200);
+  background: #ffebee;
   border-radius: 50px;
   box-shadow: rgba(255, 255, 255, 0.5) 0px 15px 30px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
@@ -302,9 +303,9 @@
   text-align: center;
   width: 90%;
   margin: 50px auto;
-  border: 6px solid #fff;
+  border: 2px solid #fff;
   border-radius: 30px;
-  animation: pulse 2s alternate infinite;
+  animation: slide-top 2s infinite;
 }
 #article4:hover {
   animation: none;
@@ -329,12 +330,21 @@
 }
 #article4 h2 {
   padding: 20px;
-  color: rgb(85, 89, 105);
+  color: #e91e63;
   font-size: 20px;
 }
 @media screen and (max-width:1024px) {
   #article4 h2 {
     font-size: 14px;
+  }
+}
+#article4 h4 {
+  line-height: 1.5;
+  display: none;
+}
+@media screen and (max-width:1024px) {
+  #article4 h4 {
+    display: inline-block;
   }
 }
 #article4 strong {
