@@ -4,6 +4,9 @@
 
 
 @media screen and (max-width:1024px) {
+    #wrap {
+        background-size: cover;
+    }
     #section {
         display: block;
         width: 98%;
@@ -29,7 +32,6 @@
     .form {
         display: flex;
         padding: 0px;
-        padding-bottom: 3px;
     }
     .form #searchBtn {
         width: 100px;
