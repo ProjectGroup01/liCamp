@@ -30,7 +30,6 @@
     position: relative;
     margin: 45px 0;
     transition: all 0.3s;
-    display: none;
   }
 
   .hamburger-button {
@@ -101,6 +100,14 @@
     color: #ddd;
   }
 
+  #footer .footer_logo img {
+    width: 110px;
+    height: 65px;
+    position: absolute;
+    left: -40px;
+    top: 10px;
+  }
+  
   #footer .fnb {
     width: 100%;
     padding: 15px 0 0 0;
@@ -110,11 +117,10 @@
     left: 0px;
   }
 
-  .footerBottom {
+ .footerBottom {
     position: relative;
     padding: 42px 0 0;
-    margin-top: 30px;
-    margin-left: 98px;
+    margin: 30px 0 0 98px;
     color: #ddd;
   }
 }

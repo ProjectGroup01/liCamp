@@ -2,7 +2,7 @@
   margin: 0 auto;
 }
 
-#wrap {
+body {
   background: #000;
 }
 
@@ -11,11 +11,12 @@
   display: flex;
   text-align: center;
   margin: 50px auto;
-  padding: 100px 0;
+  padding: 80px 0;
 }
 @media screen and (max-width:1024px) {
   #article1 {
     display: block;
+    margin: 0;
   }
 }
 #article1 .rule {
@@ -158,6 +159,7 @@
 #article2 p {
   font-size: 40px;
   line-height: 2;
+  letter-spacing: 5px;
 }
 @media screen and (max-width:1024px) {
   #article2 p {
@@ -167,6 +169,7 @@
 #article2 h2 {
   font-size: 35px;
   line-height: 1.5;
+  letter-spacing: 10px;
 }
 @media screen and (max-width:1024px) {
   #article2 h2 {
