@@ -53,7 +53,20 @@ $('.article4 .movie .img img').on('click', function(){
             transform:'translate(-50%, -60%)'
          })
      } 
-     
+    //else if( window.innerWidth < 768){
+    //     $('.modal .imgbox').css({
+    //         position:'absolute',
+    //         width:'300px',
+    //         height:'200px',
+    //         top:'50%',
+    //         left:'50%',
+    //         transform:'translate(-50%, -60%)'
+    //      })
+    //  }
+
+
+
+    
     $('.imgbox button').css({
         position:'absolute',
         top:'0',

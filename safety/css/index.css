@@ -10,13 +10,14 @@ body {
   max-width: 1500px;
   display: flex;
   text-align: center;
-  margin: 50px auto;
-  padding: 80px 0;
+  margin: 80px auto;
+  padding: 100px 0;
 }
 @media screen and (max-width:1024px) {
   #article1 {
     display: block;
     margin: 0;
+    padding: 80px 0;
   }
 }
 #article1 .rule {
@@ -254,7 +255,7 @@ body {
   height: 330px;
   background: #ffebee;
   border-radius: 50px;
-  box-shadow: rgba(255, 255, 255, 0.5) 0px 15px 30px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgba(255, 255, 255, 0.3) 0px 15px 30px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 @media screen and (max-width:1024px) {
   #article3 .list li .box {
