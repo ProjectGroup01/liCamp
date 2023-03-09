@@ -50,15 +50,6 @@ article {
   transition-delay: 3s;
 }
 
-.sub1-text {
-  width: calc(94% - 500px);
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 0;
-  padding: 100px;
-  line-height: 2;
-}
 .sub1.on ul li {
   transform: scale(1);
   opacity: 1;
