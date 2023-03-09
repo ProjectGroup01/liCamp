@@ -21,7 +21,7 @@ article {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .sub1 ul {
