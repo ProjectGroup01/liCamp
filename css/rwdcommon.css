@@ -4,6 +4,17 @@
   #header {
     height: 60px;
   }
+  
+   #header .logobox .logo {
+    background: url(../img/LECAMP_logo1.png);
+    display: block;
+    width: 110px;
+    height: 35px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 10px 0 0 10px;
+  }
+  
   #header .top_menu {
     text-align: right;
     color: #999;
