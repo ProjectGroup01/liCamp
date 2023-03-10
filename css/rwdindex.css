@@ -9,10 +9,18 @@
     transform: translateX(-50%);
     min-height: 0vh;
   }
-
+  
+   .cont1 .video {
+    margin: 0 auto;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 80px;
+    animation: fadein 3s;
+  }
+  
   .cont2,
   .cont3 {
-    padding: 300px 0 200px 0;
+    padding: 200px 0 200px 0;
     min-height: 0vh;
     display: flex;
     justify-content: center;
@@ -36,7 +44,7 @@
   .cont3 .container {
     position: relative;
     width: 900px;
-    height: 700px;
+    height: 600px;
     background: #222;
     border-radius: 50% 20% / 10% 40%;
   }
