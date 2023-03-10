@@ -29,7 +29,7 @@ body{background: #000;}
 
             h1{ padding: 40px 0; font-size: 25px; transform: translateY(30px); 
                 transition: all 0.4s; letter-spacing: 3px; color:#e91e63; font-weight: bold;
-                @media #{$phone}{ font-size: 20px;}}
+                @media #{$phone}{ font-size: 20px; padding: 25px;}}
             ul{list-style: none; transform: translateY(30px); 
                 transition: all 0.4s;}
             li{ line-height: 1.8; text-align: left; padding-left: 40px;
@@ -118,9 +118,9 @@ body{background: #000;}
             @media #{$phone}{ flex:1 1 40%; margin: 5px 5px; animation: none;}
             
             .box{
-                 height: 330px; background: #ffebee;
+                 height: auto; padding: 20px 0; background: #ffebee;
                 border-radius: 50px; box-shadow: rgba(255, 255, 255, 30%) 0px 15px 30px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-                @media #{$phone}{ height: 230px;  border-radius: 20px; }
+                @media #{$phone}{   border-radius: 20px; }
                 img{border-radius: 50%; padding: 20px 0; text-align: center; 
                     @media #{$phone}{ width: 100%; padding: 10px 0; }
                 }
@@ -162,8 +162,6 @@ body{background: #000;}
         @media #{$phone}{ font-size: 20px;}}
     h2{ padding: 20px; color:#e91e63; font-size: 20px; font-weight: 600;
         @media #{$phone}{ font-size: 14px;}}
-    h4{ line-height: 1.5;  display: none; 
-        @media #{$phone}{display: inline-block; }}    
     strong{font-size: 25px;}
     .img{ padding: 20px 0; cursor: pointer; display: flex;
         @media #{$phone}{ display: block; width: 100%;  text-align: center;}

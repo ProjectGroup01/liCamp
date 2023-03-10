@@ -70,6 +70,7 @@ body {
 @media screen and (max-width:1024px) {
   #article1 .rule .safe h1 {
     font-size: 20px;
+    padding: 25px;
   }
 }
 #article1 .rule .safe ul {
@@ -260,14 +261,14 @@ body {
   }
 }
 #article3 .list li .box {
-  height: 330px;
+  height: auto;
+  padding: 20px 0;
   background: #ffebee;
   border-radius: 50px;
   box-shadow: rgba(255, 255, 255, 0.3) 0px 15px 30px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 @media screen and (max-width:1024px) {
   #article3 .list li .box {
-    height: 230px;
     border-radius: 20px;
   }
 }
@@ -356,15 +357,6 @@ body {
 @media screen and (max-width:1024px) {
   #article4 h2 {
     font-size: 14px;
-  }
-}
-#article4 h4 {
-  line-height: 1.5;
-  display: none;
-}
-@media screen and (max-width:1024px) {
-  #article4 h4 {
-    display: inline-block;
   }
 }
 #article4 strong {
