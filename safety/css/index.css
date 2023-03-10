@@ -8,10 +8,13 @@ body {
 }
 
 #article1 {
-  max-width: 1500px;
+  width: 98%;
+  height: 100vh;
   display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  margin: 80px auto;
+  margin: 0px auto;
   padding: 100px 0;
 }
 @media screen and (max-width:1024px) {
@@ -24,15 +27,15 @@ body {
 #article1 .rule {
   width: 30%;
   height: 500px;
-  border-radius: 40px;
+  border-radius: 1px;
   background-color: #9e9e9e;
   position: relative;
   color: #fff;
   text-decoration: none;
   text-align: center;
   overflow: hidden;
-  margin: 0 50px;
-  box-shadow: rgba(255, 255, 255, 0.9) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  margin: 0 20px;
+  box-shadow: rgba(255, 255, 255, 0.9) 0px 0px 20px, rgba(0, 0, 0, 0.22) 0px 0px 5px;
   animation: flipInY 2s alternate;
 }
 @media screen and (max-width:1024px) {
@@ -184,7 +187,7 @@ body {
 }
 
 #article3 {
-  max-width: 1500px;
+  width: 98%;
   padding: 50px 0;
   margin: 50px auto;
   text-align: center;
@@ -244,6 +247,7 @@ body {
 #article3 .list li {
   flex: 1 1 25%;
   margin: 0 20px;
+  box-shadow: rgba(255, 255, 255, 0.9) 0px 0px 20px, rgba(0, 0, 0, 0.22) 0px 0px 5px;
 }
 #article3 .list li:hover {
   animation: slide 0.5s normal both;
@@ -264,8 +268,8 @@ body {
   height: auto;
   padding: 20px 0;
   background: #ffebee;
-  border-radius: 50px;
-  box-shadow: rgba(255, 255, 255, 0.3) 0px 15px 30px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  border-radius: 1px;
+  box-shadow: rgba(255, 255, 255, 0.3) 0px 0px 20px, rgba(0, 0, 0, 0.22) 0px 0px 5px;
 }
 @media screen and (max-width:1024px) {
   #article3 .list li .box {
@@ -320,11 +324,11 @@ body {
   background-color: #000;
   color: #fff;
   text-align: center;
-  width: 90%;
+  width: 98%;
   margin: 50px auto;
-  border: 2px solid #fff;
-  border-radius: 30px;
+  border-radius: 1px;
   animation: slide-top 2s infinite;
+  box-shadow: rgba(255, 255, 255, 0.3) 0px 0px 20px, rgba(0, 0, 0, 0.22) 0px 0px 5px;
 }
 #article4:hover {
   animation: none;
@@ -383,3 +387,13 @@ body {
     padding: 10px 0;
   }
 }/*# sourceMappingURL=index.css.map */
+
+/* 변경내용 
+  #article1 margin auto로 가운데 정렬 빼고 flex
+  align-items: center;
+  justify-content: center;
+  로 가운데 정렬
+  
+  #article1,#article3 width 변경 
+  #article1,#article3 box-shadow, bolder-radius 변경
+*/
