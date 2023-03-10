@@ -5,15 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/rwdcommon.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/rwdcommon.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/rwdindex.css">
+    <link rel="stylesheet" href="./css/animation.css">
     <script src="./js/prefixfree.min.js"></script>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/index.js"></script>
     <title>recommend</title>
-    <script src="./js/prefixfree.min.js"></script>
 </head>
 <body>
+
+
+
     <div id="wrap">
       <header id="header">
         <div class="headerbox">
@@ -26,7 +31,7 @@
           <div class="row">
             <div class="logobox">
               <h1>
-                <a href="./index.html" class="logo">
+                <a href="../index.html" class="logo">
                   <span class="blind">로고</span>
                 </a>
               </h1>
@@ -37,16 +42,16 @@
               <!-- <div class="box_bg"></div> -->
               <ul class="depth1">
                 <li>
-                  <a href="aboutus/index.html">ABOUT US</a>
+                  <a href="../aboutus/index.html">ABOUT US</a>  <!-- 다른 페이지로 이동되는 링크 경로 잘 적용시켜야됨 -->
                 </li>
                 <li>
-                  <a href="safety/index.html">SAFETY</a>
+                  <a href="../safety/index.html">SAFETY</a>
                 </li>
                 <li>
-                  <a href="search/index.html">SEARCH</a>
+                  <a href="../search/index.html">SEARCH</a>
                 </li>
                 <li>
-                  <a href="recommand/index.html">RECOMMAND</a>
+                  <a href="index.html">RECOMMAND</a>
                 </li>
               </ul>
             </div>
@@ -65,16 +70,16 @@
         <nav class="menu">
           <ul class="m_depth1">
             <li>
-              <a href="aboutus/index.html">ABOUT US</a>
+              <a href="../aboutus/index.html">ABOUT US</a>
             </li>
             <li>
-              <a href="safety/index.html">SAFETY</a>
+              <a href="../safety/index.html">SAFETY</a>
             </li>
             <li>
-              <a href="search/index.html">SEARCH</a>
+              <a href="../search/index.html">SEARCH</a>
             </li>
             <li>
-              <a href="recommand/index.html">RECOMMAND</a>
+              <a href="index.html">RECOMMAND</a>
             </li>
             <li class="topMenu">
               <a href="#">LOGIN</a>
@@ -90,80 +95,66 @@
             <article class="article1">
                 <div class="recommend">
                     <h2></h2>
-                    <ul>
-                        <li>
-                            <div>
+                            <div class="box recommend1">
                               <a href="https://camplink.co.kr:444/?camp=soracampn" target="_blank">
-                                <img src="img/2023-03-02Soran.png" alt="소란캠프">
+                                <img src="img/bgbg1.jfif" alt="소란캠프" width="403px">
                               </a>
                                 <div class="zoom">
-                                  <h3>소란캠프</h3>
+                                  <h4>소란캠프</h4>
                                   <p>경기도 가평군 청평면 대성리578-3</p>
-                                  <a href="https://camplink.co.kr:444/?camp=soracampn" target="_blank">자세히 보기</a>
+                                  <a href="https://camplink.co.kr:444/?camp=soracampn" target="_blank"><p class="gourl">클릭하여 페이지로 이동</p></a>
                                 </div>
                             </div>
-                        </li>
-                        <li>
-                            <div>
-                                <a href="https://camplink.co.kr:444/index/0booking/m_calendar.php?camplink=ho2227&app_id=" target="_blank">
-                                  <img src="img/2023-03-02반딧불자연캠핑장.png" alt="반딧불자연캠핑장">
-                                </a>
+                            <div class="box recommend2">
+                                  <img src="img/img2.jpg" alt="반딧불자연캠핑장" width="403px">
                                 <div class="zoom">
-                                  <h3>반딧불자연캠핑장</h3>
+                                  <h4>반딧불자연캠핑장</h4>
                                   <p>충청북도 단양군 단성면 두항리 1길 50</p>
-                                  <a href="https://camplink.co.kr:444/index/0booking/m_calendar.php?camplink=ho2227&app_id=" target="_blank">자세히 보기</a>
+                                  <a href="https://camplink.co.kr:444/index/0booking/m_calendar.php?camplink=ho2227&app_id=" target="_blank"><p class="gourl">클릭하여 페이지로 이동</p></a>
                                 </div>
                             </div>
-                        </li>
-                        <li>
-                            <div>
-                                <a href="https://camplink.co.kr:444/index/0booking/m_calendar.php?camplink=kys12960" target="_blank">
-                                  <img src="img/2023-03-02김삿갓 체험 캠핑장.png" alt="김삿갓체험캠핑장">
-                                </a>
+                            <div class="box recommend3">
+                                  <img src="img/img3.jpg" alt="김삿갓체험캠핑장">
                                 <div class="zoom">
-                                  <h3>김삿갓 체험 캠핑장</h3>
+                                  <h4>김삿갓 체험 캠핑장</h4>
                                   <p>강원도 영월국 김삿갓면 와석리 327-2</p>
-                                  <a href="https://camplink.co.kr:444/index/0booking/m_calendar.php?camplink=kys12960" target="_blank">자세히 보기</a>
+                                  <a href="https://camplink.co.kr:444/index/0booking/m_calendar.php?camplink=kys12960" target="_blank">
                                 </div>
                             </div>
-                        </li>
-                        <li>
-                            <div>
-                                <a href="https://camplink.co.kr:444/?camp=ggi103" target="_blank">
-                                  <img src="img/2023-03-02파피루스캠핑장.png" alt="파피루스캠핑장">
-                                </a>
+                            <div class="box recommend4">
+                                  <img src="img/img4.jpg" alt="파피루스캠핑장">
                                 <div class="zoom">
-                                    <h3>파피루스캠핑장</h3>
+                                    <h4>파피루스캠핑장</h4>
                                     <p>경기도 포천시 영중면 성동리 74번지</p>
-                                    <a href="https://camplink.co.kr:444/?camp=ggi103" target="_blank">자세히 보기</a>
+                                    <a href="https://camplink.co.kr:444/?camp=ggi103" target="_blank"><p class="gourl">클릭하여 페이지로 이동</p></a>
                                 </div>
                             </div>
-                        </li>
-                        <li>
-                            <div>
-                                <a href="http://www.campingcu.com/" target="_blank">
-                                  <img src="img/2023-03-06청운오토캠핑장.png" alt="청운오토캠핑장">
-                                </a>
+                            <div class="box recommend5">
+                                  <img src="img/img1.jpg" alt="청운오토캠핑장">
                                 <div class="zoom">
-                                  <h3>청운오토캠핑장</h3>
+                                  <h4>청운오토캠핑장</h4>
                                   <p>경기도 양평군 청운면 수풀길 37</p>
-                                  <a href="http://www.campingcu.com/" target="_blank">자세히 보기</a>
+                                  <a href="http://www.campingcu.com/" target="_blank"><p class="gourl">클릭하여 페이지로 이동</p></a>
                                 </div>
                             </div>
-                        </li>
-                        <li>
-                            <div>
-                                <a href="https://camplink.co.kr:444/?camp=moonlight" target="_blank">
-                                  <img src="img/2023-03-06문라이트캠핑장.png" alt="문라이트캠핑장">
-                                </a>
+                            <div class="box recommend6">
+                                  <img src="img/img2.jpg" alt="문라이트캠핑장">
                                 <div class="zoom">
-                                  <h3>문라이트캠핑장</h3>
+                                  <h4>문라이트캠핑장</h4>
                                   <p>인천광역시 강화군 길상면 선두리 978-6</p>
-                                  <a href="https://camplink.co.kr:444/?camp=moonlight" target="_blank">자세히 보기</a>
+                                  <a href="https://camplink.co.kr:444/?camp=moonlight" target="_blank">
+                                    <p class="gourl">클릭하여 페이지로 이동</p>
+                                  </a>
                                 </div>
                             </div>
-                        </li>
-                    </ul>
+                            <div class="number">
+                              <p class="num1">1</p>
+                              <p class="num2">2</p>
+                              <p class="num3">3</p>
+                              <p class="num4">4</p>
+                              <p class="num5">5</p>
+                              <p class="num6">6</p>
+                            </div><!-- 넘버 버튼 -->  
                 </div>
             </article>
         </section>
