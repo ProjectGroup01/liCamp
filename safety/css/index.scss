@@ -1,7 +1,7 @@
 $phone: "screen and (max-width:1024px)"; 
 // @media #{$phone}{ }
 
-*{ margin: 0 auto; }
+*{ margin: 0 auto;  font-family: 'Nanum Gothic', sans-serif;}
 body{background: #000;}
 #article1{
     max-width: 1500px;
@@ -27,7 +27,7 @@ body{background: #000;}
             transition: all 0.4s; cursor: pointer; 
             @media #{$phone}{ margin: 0 auto; width: 100%;}
 
-            h1{ padding: 40px 0; font-size: 23px; transform: translateY(30px); 
+            h1{ padding: 40px 0; font-size: 25px; transform: translateY(30px); 
                 transition: all 0.4s; letter-spacing: 3px; color:#e91e63; font-weight: bold;
                 @media #{$phone}{ font-size: 20px;}}
             ul{list-style: none; transform: translateY(30px); 
@@ -46,22 +46,22 @@ body{background: #000;}
     }
 
     .rule1{
-        li{font-size: 17px; padding: 15px 0;
-            @media #{$phone}{font-size: 15px; padding: 20px 0; }
+        li{font-size: 17px; padding: 15px 0; font-weight: 600;
+            @media #{$phone}{font-size: 15px; padding: 20px 0;}
         }
         background: url(../images/rule1.jpg) no-repeat center top; 
         background-size: cover;
     }
     .rule2{
-        li{font-size: 14px;
-            @media #{$phone}{ font-size: 14px; padding: 10px 0;}
+        li{font-size: 14px; font-weight: 600;
+            @media #{$phone}{ font-size: 14px; padding: 10px 0; }
         }
        background: url(../images/rule2.jpg) no-repeat center top;
        background-size: cover;
   
     }
     .rule3{
-        li{font-size: 17px; padding: 6px 0; letter-spacing: 1px;
+        li{font-size: 17px; padding: 6px 0; letter-spacing: 1px; font-weight: 600;
             @media #{$phone}{ font-size: 15px; padding: 10px 0; }}
         background: url(../images/rule3.jpg) no-repeat center top;
         background-size: cover;
@@ -87,20 +87,20 @@ body{background: #000;}
     padding: 50px 0;
     margin: 50px auto;
     text-align: center;
-    h1{ font-size: 35px; color: #fff;
+    h1{ font-size: 35px; color: #fff; font-weight: bold;
         @media #{$phone}{ font-size: 30px; margin: 0;} 
     }
 
     .content1 {
         margin: 0 30px;
     }
-     strong{ line-height: 3; font-size: 20px; color:#e91e63;
+     strong{ line-height: 3; font-size: 20px; color:#e91e63; font-weight: 600;
         @media #{$phone}{ font-size: 18px; font-weight: bold;}}
 
     .list li:hover{
         animation: none;
     }    
-    .intro { line-height: 2; color: #fff;
+    .intro { line-height: 2; color: #fff; font-weight: 600; letter-spacing: 2px;
         @media #{$phone}{ display: none; }}
     
     .list{ 
@@ -124,11 +124,14 @@ body{background: #000;}
                 img{border-radius: 50%; padding: 20px 0; text-align: center; 
                     @media #{$phone}{ width: 100%; padding: 10px 0; }
                 }
-                h3{line-height: 2; font-size: 25px; 
+                h3{line-height: 2; font-size: 25px; font-weight: bold; letter-spacing: 2px;
                     // color: #fff;
                     @media #{$phone}{ font-size: 15px; }
                 }
-                p{ line-height: 1.5; font-weight: 600; padding: 10px 0; font-size: 15px;
+
+                i{color: #e91e63;}
+
+                p{ line-height: 1.5; font-weight: 600; padding: 10px 0; font-size: 15px; font-weight: 600;
                     // color: #fff; 
                     @media #{$phone}{ font-size: 12px; padding: 0 5px;}
                 }
@@ -155,9 +158,9 @@ body{background: #000;}
 }    
     @media #{$phone}{ padding: 10px; animation: none;}
     .movie{ margin: 0 auto; }
-    h1{ padding: 10px 0; font-size: 30px;
+    h1{ padding: 10px 0; font-size: 35px; font-weight: bold;
         @media #{$phone}{ font-size: 20px;}}
-    h2{ padding: 20px; color:#e91e63; font-size: 20px;
+    h2{ padding: 20px; color:#e91e63; font-size: 20px; font-weight: 600;
         @media #{$phone}{ font-size: 14px;}}
     h4{ line-height: 1.5;  display: none; 
         @media #{$phone}{display: inline-block; }}    

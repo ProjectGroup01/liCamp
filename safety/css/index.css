@@ -1,5 +1,6 @@
 * {
   margin: 0 auto;
+  font-family: "Nanum Gothic", sans-serif;
 }
 
 body {
@@ -59,7 +60,7 @@ body {
 }
 #article1 .rule .safe h1 {
   padding: 40px 0;
-  font-size: 23px;
+  font-size: 25px;
   transform: translateY(30px);
   transition: all 0.4s;
   letter-spacing: 3px;
@@ -112,6 +113,7 @@ body {
 #article1 .rule1 li {
   font-size: 17px;
   padding: 15px 0;
+  font-weight: 600;
 }
 @media screen and (max-width:1024px) {
   #article1 .rule1 li {
@@ -125,6 +127,7 @@ body {
 }
 #article1 .rule2 li {
   font-size: 14px;
+  font-weight: 600;
 }
 @media screen and (max-width:1024px) {
   #article1 .rule2 li {
@@ -140,6 +143,7 @@ body {
   font-size: 17px;
   padding: 6px 0;
   letter-spacing: 1px;
+  font-weight: 600;
 }
 @media screen and (max-width:1024px) {
   #article1 .rule3 li {
@@ -187,6 +191,7 @@ body {
 #article3 h1 {
   font-size: 35px;
   color: #fff;
+  font-weight: bold;
 }
 @media screen and (max-width:1024px) {
   #article3 h1 {
@@ -201,6 +206,7 @@ body {
   line-height: 3;
   font-size: 20px;
   color: #e91e63;
+  font-weight: 600;
 }
 @media screen and (max-width:1024px) {
   #article3 strong {
@@ -214,6 +220,8 @@ body {
 #article3 .intro {
   line-height: 2;
   color: #fff;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 @media screen and (max-width:1024px) {
   #article3 .intro {
@@ -277,17 +285,23 @@ body {
 #article3 .list li .box h3 {
   line-height: 2;
   font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 @media screen and (max-width:1024px) {
   #article3 .list li .box h3 {
     font-size: 15px;
   }
 }
+#article3 .list li .box i {
+  color: #e91e63;
+}
 #article3 .list li .box p {
   line-height: 1.5;
   font-weight: 600;
   padding: 10px 0;
   font-size: 15px;
+  font-weight: 600;
 }
 @media screen and (max-width:1024px) {
   #article3 .list li .box p {
@@ -325,7 +339,8 @@ body {
 }
 #article4 h1 {
   padding: 10px 0;
-  font-size: 30px;
+  font-size: 35px;
+  font-weight: bold;
 }
 @media screen and (max-width:1024px) {
   #article4 h1 {
@@ -336,6 +351,7 @@ body {
   padding: 20px;
   color: #e91e63;
   font-size: 20px;
+  font-weight: 600;
 }
 @media screen and (max-width:1024px) {
   #article4 h2 {
