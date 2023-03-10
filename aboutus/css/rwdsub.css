@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+@media screen and (max-width: 1024px) {
+  .sub1 ul {
+    margin: 100px 0 0 110px;
+  }
+  .sub1 ul li {
+    width: 80%;
+    height: 280px;
+    transform: scale(0.5);
+    opacity: 0;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    margin-bottom: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sub1 ul {
+    margin: 50px 0 0 110px;
+  }
+  .sub1 ul li {
+    width: 80%;
+    height: 226px;
+    transform: scale(0.5);
+    opacity: 0;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    margin-bottom: 180px;
+  }
+}
