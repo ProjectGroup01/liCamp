@@ -17,7 +17,6 @@
   
   #header .top_menu {
     text-align: right;
-    color: #999;
     font-size: 12px;
     display: none;
   }
@@ -29,8 +28,17 @@
     transform: translateY(-50%);
     width: 700px;
     transition: all 0.8s;
-    /* display: flex; */
     display: none;
+  }
+
+  #header #nav .depth1 > li {
+    display: block;
+    padding: 0 30px;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    margin: 45px 0;
+    transition: all 0.3s;
   }
 
   .hamburger-button {
@@ -57,28 +65,30 @@
   .m_menu nav ul li {
     padding: 10px 0;
   }
+  .m_menu nav ul li .bar {
+    height: 8px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-  #header #nav .depth1 {
-    position: absolute;
-    top: 50%;
-    right: 5%;
-    transform: translateY(-50%);
-    width: 550px;
-    transition: all 0.8s;
-    display: none;
+
+  #header #nav .depth1 > li {
+    display: block;
+    padding: 0 20px;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    margin: 45px 0;
+    transition: all 0.3s;
   }
-  
+
   .m_menu nav ul li a {
-    color: #fff;
     opacity: 0.75;
     transition: opacity 0.2s ease;
     font-size: 45px;
   }
 
   .m_menu nav ul li.topMenu a {
-    color: #ddd;
     font-size: 30px;
   }
 
