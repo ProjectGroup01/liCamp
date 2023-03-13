@@ -64,15 +64,29 @@ $(".hamburger-button").click(function (e) {
   $(".m_menu").toggleClass("visible");
 });
 
-// ABOUTUS
-let sub1img = $('.sub1').offset().top + $(window).height() / 2;
+// // ABOUTUS
+// let sub1img = $('.sub1').offset().top + $(window).height() / 2;
 
-$(window).on('scroll', function () {
-  // let sct = $(this).scrollTop()
-  let sct = $(this).scrollTop() + $(this).height();
-  if (sct >= sub1img) {
-    $('.sub1').addClass('on')
-  } else {
-    $('.sub1').removeClass('on')
-  }
-})
+// $(window).on('scroll', function () {
+//   // let sct = $(this).scrollTop()
+//   let sct = $(this).scrollTop() + $(this).height();
+//   if (sct >= sub1img) {
+//     $('.sub1').addClass('on')
+//   } else {
+//     $('.sub1').removeClass('on')
+//   }
+// })
+
+$(window).scroll( function(){
+  $('.sub1 li').each( function(i){
+      
+      var ele = $(this).offset().top + $(this).outerHeight()/2;
+      var wdw = $(window).scrollTop() + $(window).height();
+      
+      if( wdw > ele ){
+        $(this).addClass('animate');
+      }else {
+        $(this).removeClass('animate');
+      }
+  }); 
+});
