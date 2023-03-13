@@ -29,18 +29,8 @@
     transform: translateY(-50%);
     width: 700px;
     transition: all 0.8s;
-    display: flex;
-  }
-
-  #header #nav .depth1 > li {
-    display: block;
-    padding: 0 30px;
-    font-size: 18px;
-    font-weight: 600;
-    color: #fff;
-    position: relative;
-    margin: 45px 0;
-    transition: all 0.3s;
+    /* display: flex; */
+    display: none;
   }
 
   .hamburger-button {
@@ -79,18 +69,7 @@
     transition: all 0.8s;
     display: none;
   }
-
-  #header #nav .depth1 > li {
-    display: block;
-    padding: 0 20px;
-    font-size: 18px;
-    font-weight: 600;
-    color: #fff;
-    position: relative;
-    margin: 45px 0;
-    transition: all 0.3s;
-  }
-
+  
   .m_menu nav ul li a {
     color: #fff;
     opacity: 0.75;
