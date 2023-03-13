@@ -8,13 +8,10 @@ body {
 }
 
 #article1 {
-  width: 98%;
-  height: 100vh;
+  max-width: 1500px;
   display: flex;
-  align-items: center;
-  justify-content: center;
   text-align: center;
-  margin: 0px auto;
+  margin: 80px auto;
   padding: 100px 0;
 }
 @media screen and (max-width:1024px) {
@@ -187,7 +184,7 @@ body {
 }
 
 #article3 {
-  width: 98%;
+  max-width: 1500px;
   padding: 50px 0;
   margin: 50px auto;
   text-align: center;
@@ -273,7 +270,7 @@ body {
 }
 @media screen and (max-width:1024px) {
   #article3 .list li .box {
-    border-radius: 20px;
+    border-radius: 30px;
   }
 }
 #article3 .list li .box img {
@@ -326,6 +323,7 @@ body {
   text-align: center;
   width: 98%;
   margin: 50px auto;
+  border: 2px solid #fff;
   border-radius: 1px;
   animation: slide-top 2s infinite;
   box-shadow: rgba(255, 255, 255, 0.3) 0px 0px 20px, rgba(0, 0, 0, 0.22) 0px 0px 5px;
@@ -387,13 +385,3 @@ body {
     padding: 10px 0;
   }
 }/*# sourceMappingURL=index.css.map */
-
-/* 변경내용 
-  #article1 margin auto로 가운데 정렬 빼고 flex
-  align-items: center;
-  justify-content: center;
-  로 가운데 정렬
-  
-  #article1,#article3 width 변경 
-  #article1,#article3 box-shadow, bolder-radius 변경
-*/
