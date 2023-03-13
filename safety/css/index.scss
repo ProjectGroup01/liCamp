@@ -128,8 +128,8 @@ body{background: #000;}
             
             .box{
                  height: auto; padding: 20px 0; background: #ffebee;
-                border-radius: 1px;   box-shadow: rgba(255, 255, 255, 0.3) 0px 0px 20px, rgba(0, 0, 0, 0.22) 0px 0px 5px;
-                @media #{$phone}{   border-radius: 30px; }
+                border-radius: 1px;  box-shadow: rgba(255, 255, 255, 0.3) 0px 0px 20px, rgba(0, 0, 0, 0.22) 0px 0px 5px;
+                @media #{$phone}{  border-radius: 1px; box-shadow: none;}
                 img{border-radius: 50%; padding: 20px 0; text-align: center; 
                     @media #{$phone}{ width: 100%; padding: 10px 0; }
                 }

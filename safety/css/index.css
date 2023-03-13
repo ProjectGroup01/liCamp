@@ -270,7 +270,8 @@ body {
 }
 @media screen and (max-width:1024px) {
   #article3 .list li .box {
-    border-radius: 30px;
+    border-radius: 1px;
+    box-shadow: none;
   }
 }
 #article3 .list li .box img {
