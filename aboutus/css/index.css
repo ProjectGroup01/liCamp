@@ -109,16 +109,16 @@ article {
 
 .circles li:nth-child(1){
   left: 25%;
-  width: 80px;
-  height: 80px;
+  width: 20px;
+  height: 20px;
   animation-delay: 0s;
 }
 
 
 .circles li:nth-child(2){
   left: 10%;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   animation-delay: 2s;
   animation-duration: 12s;
 }
@@ -132,8 +132,8 @@ article {
 
 .circles li:nth-child(4){
   left: 40%;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   animation-delay: 0s;
   animation-duration: 18s;
 }
@@ -147,7 +147,7 @@ article {
 
 .circles li:nth-child(6){
   left: 75%;
-  width: 110px;
+  width: 80px;
   height: 110px;
   animation-delay: 3s;
 }
@@ -203,14 +203,19 @@ article {
 
 
 .sub1 .context {
-  font-size: 70px;
+  text-align: center;
+  font-size: 30px;
   color: #fff;
   font-weight:900;
   position: absolute;
+  letter-spacing: 2px;
+  line-height: 2;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+
 .sub1 ul >li {
   position: relative;
   animation: text-blur-out 1s normal;
