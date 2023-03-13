@@ -24,7 +24,7 @@ article {
 
 .cont1 .video {
   margin: 0 auto;
-  height: 850px;
+  height: auto;
   overflow: hidden;
   border-radius: 80px;
   animation: fadein 3s;
